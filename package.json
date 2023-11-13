@@ -1,5 +1,5 @@
 {
-  "name": "rosiecord",
+  "name": "pinkypromise",
   "version": "1.0.5",
   "main": "index.js",
   "type": "module",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acquitelol/rosiecord.git"
+    "url": "git+https://github.com/kaithub/PinkyPromise.git"
   },
-  "keywords": ["enmity", "rosiecord", "plumpycord", "discord"],
-  "author": "Rosie<3",
+  "keywords": ["enmity", "rosiecord", "pinkypromise", "plumpycord", "discord"],
+  "author": "kaithub",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/acquitelol/rosiecord/issues"
+    "url": "https://github.com/kaithub/PinkyPromise/issues"
   },
-  "homepage": "https://github.com/acquitelol/rosiecord#readme",
+  "homepage": "https://github.com/kaithub/PinkyPromise#readme",
   "description": "A wrapper for the @enmity-mod client which adds custom icons, fonts, and other modifications.",
   "devDependencies": {
     "@types/node": "^18.11.18",

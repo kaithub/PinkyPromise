@@ -1,11 +1,11 @@
-name: Build Enmity and Inject Rosiecord
+name: Build Enmity and Inject PinkyPromise
 on:
   push:
   workflow_dispatch:
 
 jobs:
   build:
-    name: Build Enmity and Inject Rosiecord
+    name: Build Enmity and Inject PinkyPromise
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
@@ -14,7 +14,7 @@ jobs:
         id: core
         run: brew install coreutils ldid
 
-      - name: Run Main Node Script to Patch Rosiecord
+      - name: Run Main Node Script to Patch PinkyPromise
         id: build
         run: node ./index.js
         
@@ -29,6 +29,6 @@ jobs:
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
-          automatic_release_tag: rosiecord_${{ steps.version.outputs.__DISCORD_VERSION }}
-          title: Rosiecord ${{ steps.version.outputs.__DISCORD_VERSION }}
+          automatic_release_tag: pinkypromise_${{ steps.version.outputs.__DISCORD_VERSION }}
+          title: PinkyPromise ${{ steps.version.outputs.__DISCORD_VERSION }}
           files: Dist/*.ipa
